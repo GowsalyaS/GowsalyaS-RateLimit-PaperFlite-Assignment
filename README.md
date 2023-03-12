@@ -25,13 +25,13 @@ Desired Api Rate count - 20 counts
 URL :`http://localhost:8080/getNames?id=101`
 
 # Running the project with H2
-
+```
 In pom.xml add:
         <dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 		</dependency>
-  
+ ``` 
 #### Append this to the end of application.properties file:
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver
