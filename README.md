@@ -33,6 +33,7 @@ In pom.xml add:
 		</dependency>
  ``` 
 #### Append this to the end of application.properties file:
+```
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver
 spring.datasource.username=sa
@@ -41,7 +42,7 @@ spring.jpa.show-sql=true
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.properties.hibernate.format_sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
-
+```
 
 #### To view your H2 in-memory database
 To view and query the database you can browse to http://localhost:8080/h2-console. 
